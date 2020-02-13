@@ -16,15 +16,7 @@ public class MouseLook : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*if(menuActive.GameIsPaused = true)
-        {
-            return;
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.Locked;
-        }*/
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

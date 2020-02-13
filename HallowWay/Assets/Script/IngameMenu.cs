@@ -34,6 +34,7 @@ public class IngameMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f; //unfreeze the game
         GameIsPaused = false;
+        Cursor.lockState = CursorLockMode.Locked; //lock cursorLock after menu
     }
 
     void Pause()
@@ -41,6 +42,7 @@ public class IngameMenu : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f; //freeze the game
         GameIsPaused = true;
+        Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
     }
 
     public void LoadMenu()
