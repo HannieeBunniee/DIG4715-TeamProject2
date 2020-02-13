@@ -5,10 +5,12 @@ using UnityEngine.UI; // to use UI text
 
 public class GameControllerScript : MonoBehaviour
 {
-    
+    public AudioSource musicSource;
+    public AudioClip backgroundAudio;
     void Start()
     {
-        
+        musicSource.clip = backgroundAudio;
+        musicSource.Play();
     }
 
     //=========Updates===========
@@ -21,7 +23,7 @@ public class GameControllerScript : MonoBehaviour
     {
         if (Input.GetKey("escape"))
         {
-            Debug.Log("Quitting Game");
+            Debug.Log("Quitting Game by esc key");
             Application.Quit();
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class IngameMenu : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class IngameMenu : MonoBehaviour
     public GameObject pauseMenuUI;
 
     private bool optionOn = false;
+
+
 
     void Update()
     {

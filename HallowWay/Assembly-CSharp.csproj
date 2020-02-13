@@ -67,6 +67,7 @@
     <Compile Include="Assets\Script\MainMenuScript.cs" />
     <Compile Include="Assets\Script\MouseLook.cs" />
     <Compile Include="Assets\Script\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\VolumeChangeScript.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Documents/Githubs/DIG4715-TeamProject2/HallowWay/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
