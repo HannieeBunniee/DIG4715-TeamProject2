@@ -17,11 +17,11 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundMask;
     Vector3 velocity;
     private bool isGrounded;
-    
+
 
     void Start()
     {
-        
+
     }
     // Update is called once per frame
     void Update()
