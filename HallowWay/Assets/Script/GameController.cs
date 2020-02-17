@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; // to use UI text
 
-public class GameControllerScript : MonoBehaviour
+public class GameController : MonoBehaviour
 {
     public AudioSource musicSource;
     public AudioClip backgroundAudio;

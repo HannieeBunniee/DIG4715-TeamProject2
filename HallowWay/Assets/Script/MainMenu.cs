@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 
-public class MainMenuScript : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     public AudioSource musicSource;
     public AudioClip backgroundAudio;

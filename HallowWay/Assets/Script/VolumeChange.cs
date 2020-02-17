@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VolumeChangeScript : MonoBehaviour
+public class VolumeChange : MonoBehaviour
 {
     // Reference to Audio Source component
     private AudioSource audioSrc;

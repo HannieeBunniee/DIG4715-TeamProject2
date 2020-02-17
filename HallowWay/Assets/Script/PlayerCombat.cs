@@ -8,7 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
-    public int attackDamage = 1;
+    private int attackDamage = 20;
 
     public float attackRate = 2f;
     float nextAttackTime = 0f;
@@ -24,6 +24,12 @@ public class PlayerCombat : MonoBehaviour
                 nextAttackTime = Time.time + 1f / attackRate; //cool down time in hitting attack again
             }
         }
+
+        /*if (Input.GetMouseButton(0))
+        {
+            Debug.Log("attack pressed");
+            Attack();
+        }*/
     }
 
     void Attack()
