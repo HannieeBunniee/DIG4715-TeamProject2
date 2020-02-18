@@ -5,8 +5,11 @@ using UnityEngine.UI; // to use UI text
 
 public class GameController : MonoBehaviour
 {
+    //Audio
     public AudioSource musicSource;
     public AudioClip backgroundAudio;
+
+    //========Start==========
     void Start()
     {
         musicSource.clip = backgroundAudio;
@@ -27,4 +30,6 @@ public class GameController : MonoBehaviour
             Application.Quit();
         }
     }
+
+    
 }
