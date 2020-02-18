@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour
         //since it on trigger, player CAN walk through it but it ok since it a ghost boss ;)
         if (other.gameObject.CompareTag("Enemy"))
         {
-            TakeDamage(100);
+            TakeDamage(20);
         }
     }
 

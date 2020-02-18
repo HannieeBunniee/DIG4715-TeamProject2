@@ -9,7 +9,7 @@ public class MouseLook : MonoBehaviour
     public Transform playerBody;
 
     private float xRotation = 0f;
-    private IngameMenu menuActive;
+    //private IngameMenu menuActive;
 
 
 

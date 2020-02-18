@@ -60,7 +60,6 @@ public class IngameMenu : MonoBehaviour
     public void RestartGame()
     {
         Time.timeScale = 1f; //unfreeze the game
-        Cursor.lockState = CursorLockMode.Locked; //lock cursorLock after menu
         SceneManager.LoadScene("GameScene");
     }
 
