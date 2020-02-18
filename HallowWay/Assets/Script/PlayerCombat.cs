@@ -10,7 +10,8 @@ public class PlayerCombat : MonoBehaviour
     public LayerMask enemyLayers;
     private int attackDamage = 20;
 
-    public float attackRate = 2f;
+    public AudioSource musicSource;
+	public float attackRate = 2f;
     float nextAttackTime = 0f;
 
     private void Update()
@@ -22,6 +23,7 @@ public class PlayerCombat : MonoBehaviour
                 Debug.Log("attack pressed");
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate; //cool down time in hitting attack again
+				GetComponent<AudioSource>().Play ();
             }
         }
 

@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
 {
     //Audio
     public AudioSource musicSource;
-    public AudioClip backgroundAudio;
+	public AudioClip backgroundAudio;
 
     //========Start==========
     void Start()
@@ -30,6 +30,4 @@ public class GameController : MonoBehaviour
             Application.Quit();
         }
     }
-
-    
 }

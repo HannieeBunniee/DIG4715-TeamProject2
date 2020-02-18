@@ -888,7 +888,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 410983596}
-  backgroundAudio: {fileID: 8300000, guid: c17b5b83ca07c4945904218ef50664e2, type: 3}
+  backgroundAudio: {fileID: 8300000, guid: 1131cf647af9ea348b1982034e898cde, type: 3}
 --- !u!1 &410983595
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,11 +917,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1131cf647af9ea348b1982034e898cde, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
