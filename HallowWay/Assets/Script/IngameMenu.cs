@@ -61,6 +61,7 @@ public class IngameMenu : MonoBehaviour
     {
         Time.timeScale = 1f; //unfreeze the game
         SceneManager.LoadScene("GameScene");
+        Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
     }
 
     public void optionMenu()
