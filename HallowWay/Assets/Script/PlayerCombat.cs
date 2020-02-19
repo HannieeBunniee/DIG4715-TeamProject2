@@ -13,12 +13,18 @@ public class PlayerCombat : MonoBehaviour
     public AudioSource musicSource;
 	public float attackRate = 2f;
     float nextAttackTime = 0f;
+    public bool swordPickedUp;
+
+    private void Start()
+    {
+        swordPickedUp = true;
+    }
 
     private void Update()
     {
         if(Time.time >= nextAttackTime)
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetMouseButton(0) && swordPickedUp == true)
             {
                 Debug.Log("attack pressed");
                 Attack();

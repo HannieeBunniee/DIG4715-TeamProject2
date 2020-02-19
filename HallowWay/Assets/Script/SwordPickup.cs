@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwordPickup : MonoBehaviour
 {
     public GameObject swordOnHand;
-
+    public PlayerCombat pCombatScript;
 
     void OnTriggerEnter (Collider collision)
     {
@@ -14,6 +14,7 @@ public class SwordPickup : MonoBehaviour
             Debug.Log("Touched the Sword");
             swordOnHand.SetActive(true);
             gameObject.SetActive(false);
+            //pCombatScript.swordPickedUp = true;
         }
     }
 }
