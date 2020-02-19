@@ -17,7 +17,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void Start()
     {
-        swordPickedUp = true;
+        swordPickedUp = false;
     }
 
     private void Update()

@@ -14,7 +14,7 @@ public class SwordPickup : MonoBehaviour
             Debug.Log("Touched the Sword");
             swordOnHand.SetActive(true);
             gameObject.SetActive(false);
-            //pCombatScript.swordPickedUp = true;
+            pCombatScript.swordPickedUp = true;
         }
     }
 }
