@@ -62,7 +62,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\EnemyAI.cs" />
     <Compile Include="Assets\Script\EnemyController.cs" />
+    <Compile Include="Assets\Script\Experimenting script\AISample.cs" />
     <Compile Include="Assets\Script\Experimenting script\PopUpSystem.cs" />
     <Compile Include="Assets\Script\GameController.cs" />
     <Compile Include="Assets\Script\HealthBar.cs" />
