@@ -7,4 +7,6 @@ public class EnemyAi : MonoBehaviour
     private UnityEngine.AI.NavMeshAgent nav;
 
 
+
+
 }
