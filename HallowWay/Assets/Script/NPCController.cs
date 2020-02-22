@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class NPCController : MonoBehaviour
 {
-    public Text pressXText;
+    //public Text pressXText;
+    public GameObject pressX;
     public GameObject textBoxActive;
     private bool talkAllowed;
 
@@ -14,6 +15,7 @@ public class NPCController : MonoBehaviour
     {
         if(talkAllowed && Input.GetKeyDown(KeyCode.X))
         {
+            pressX.SetActive(false);
             textBoxActive.SetActive(true);
             Time.timeScale = 0f; //freeze the game
             Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
@@ -24,7 +26,8 @@ public class NPCController : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            pressXText.gameObject.SetActive(true);
+            //pressXText.gameObject.SetActive(true);
+            pressX.SetActive(true);
             talkAllowed = true;
         }
     }
@@ -33,7 +36,8 @@ public class NPCController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            pressXText.gameObject.SetActive(false);
+            //pressXText.gameObject.SetActive(false);
+            pressX.SetActive(false);
             talkAllowed = false;
         }
     }
