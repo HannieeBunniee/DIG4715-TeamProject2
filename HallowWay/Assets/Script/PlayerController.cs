@@ -36,7 +36,15 @@ public class PlayerController : MonoBehaviour
         {
             TakeDamage(20);
         }
+
+        if (other.gameObject.CompareTag("EnemyBullet"))
+        {
+            Destroy(other.gameObject);
+            TakeDamage(20);
+        }
+
     }
+
 
    
 

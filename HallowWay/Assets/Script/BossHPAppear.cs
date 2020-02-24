@@ -6,6 +6,8 @@ public class BossHPAppear : MonoBehaviour
 {
     public GameObject HPAppear;
     public GameObject colliderDisable;
+    public GameObject WallAppear;
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +15,9 @@ public class BossHPAppear : MonoBehaviour
         {
             HPAppear.SetActive(true);
             colliderDisable.SetActive(false);
+            WallAppear.SetActive(true);
+
+
         }
     }
 }
