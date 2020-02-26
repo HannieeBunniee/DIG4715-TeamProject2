@@ -46,8 +46,6 @@ GameObject:
   - component: {fileID: 1340368706327094136}
   - component: {fileID: 1340368706327094143}
   - component: {fileID: 1340368706327094142}
-  - component: {fileID: -3983751093940215070}
-  - component: {fileID: 4442186631820961044}
   m_Layer: 9
   m_Name: Ghost
   m_TagString: Enemy
@@ -278,34 +276,3 @@ MonoBehaviour:
   healthBar: {fileID: 0}
   objectToDisable: {fileID: 0}
   objectToDisable2: {fileID: 0}
---- !u!114 &-3983751093940215070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041412285987549463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40848b5dd6318ca4eb07efe68e6334ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  points: []
-  delay: 0
-  reverseOrder: 0
-  braking: 1
---- !u!114 &4442186631820961044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7041412285987549463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6daffaafbf57bbd4d904e7724231038a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChaseRange: 20
-  StopRange: 3
-  target: {fileID: 0}

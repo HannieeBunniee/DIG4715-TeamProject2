@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour
 
     public GameObject loseScreen;
 
+    public AudioSource musicSource;
+    public AudioClip loseAudio;
+
+    public GameController gameController;
+    
     //Start
     private void Start()
     {
@@ -25,6 +30,9 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0f; //freeze the game
             Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
+            gameController.regAudio = false;
+            musicSource.clip = loseAudio;
+            musicSource.Play();
             loseScreen.SetActive(true);
         }
     }
