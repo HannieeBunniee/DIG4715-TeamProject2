@@ -55,8 +55,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\EC.cs" />
      <Compile Include="Assets\EnemyChase.cs" />
      <Compile Include="Assets\EnemyPatrol.cs" />
+     <Compile Include="Assets\EP.cs" />
      <Compile Include="Assets\GoalMover.cs" />
      <Compile Include="Assets\GoalSetting.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
