@@ -11,9 +11,13 @@ public class GameController : MonoBehaviour
     public AudioClip winAudio;
     public AudioClip loseAudio;
 
+    //bool
+    public bool regAudio;
+
     //========Start==========
     void Start()
     {
+        regAudio = true;
         musicSource.clip = backgroundAudio;
         musicSource.Play();
 
@@ -22,7 +26,11 @@ public class GameController : MonoBehaviour
     //=========Updates===========
     void Update()
     {
-
+        if (regAudio == false)
+        {
+            musicSource.Stop();
+        }
+        
     }
 
     public void LoseAudio()

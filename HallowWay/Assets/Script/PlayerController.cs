@@ -10,15 +10,17 @@ public class PlayerController : MonoBehaviour
     public HealthBar healthBar;
 
     public GameObject loseScreen;
-
+    public GameObject bossDisable;
     public GameController gameController;
-
+    
 
     //Start
     private void Start()
     {
+        //gameController = GetComponent<GameController>();
         currentHealth = maxHealth;
         healthBar.SetPlayerHealth(maxHealth);
+
     }
 
     //Update
@@ -29,8 +31,12 @@ public class PlayerController : MonoBehaviour
             //Time.timeScale = 0f; //freeze the game //THIS FREEZE THE GAME BUT WONT UNFREEZE IT WHEN PRESSED RESTART
             Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
             gameController.LoseAudio();
-            //gameController.lost = true;
+            //gameController.regAudio = false;
+            
             loseScreen.SetActive(true);
+
+            
+
 
         }
     }
