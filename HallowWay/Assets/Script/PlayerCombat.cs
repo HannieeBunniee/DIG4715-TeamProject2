@@ -15,6 +15,9 @@ public class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0f;
     public bool swordPickedUp;
 
+    public GameObject ghost;
+    //public GameObject scriptEnable;
+
     private void Start()
     {
         swordPickedUp = false;
@@ -51,10 +54,15 @@ public class PlayerCombat : MonoBehaviour
         foreach(Collider enemy in hitEnemies)
         {
             Debug.Log("Enemy hit");
-            enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
+            //enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
+            killenemy();
         }
     }
 
+    public void killenemy()
+    {
+        StartCoroutine(StunTimer());
+    }
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null)
@@ -63,5 +71,14 @@ public class PlayerCombat : MonoBehaviour
         }
 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
+    }
+
+    IEnumerator StunTimer()
+    {
+        //scriptEnable.GetComponent<WeaponController>().enabled = false;
+        ghost.SetActive(false);
+        yield return new WaitForSeconds(3);
+        ghost.SetActive(true);
+        //scriptEnable.GetComponent<WeaponController>().enabled = true;
     }
 }
