@@ -9,33 +9,34 @@ public class GameController : MonoBehaviour
     public AudioSource musicSource;
 	public AudioClip backgroundAudio;
     public AudioClip winAudio;
-    public bool regAudio;
+    public AudioClip loseAudio;
+
     //========Start==========
     void Start()
     {
-        regAudio = true;
-        if (regAudio = true)
-        {
-            musicSource.clip = backgroundAudio;
-            musicSource.Play();
-        }
-        if(regAudio = false)
-        {
-            musicSource.Stop();
-        }
-        //musicSource.clip = backgroundAudio;
-        //musicSource.Play();
+        musicSource.clip = backgroundAudio;
+        musicSource.Play();
+
     }
 
     //=========Updates===========
     void Update()
     {
-        
+
+    }
+
+    public void LoseAudio()
+    {
+        musicSource.Stop();
+        musicSource.loop = false;
+        musicSource.clip = loseAudio;
+        musicSource.Play();
     }
 
     public void WinAudio()
     {
         musicSource.Stop();
+        musicSource.loop = false;
         musicSource.clip = winAudio;
         musicSource.Play();
     }
