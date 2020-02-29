@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public HealthBar healthBar;
 
     public GameObject loseScreen;
-    public GameObject bossDisable;
+    //public GameObject bossDisable;
     public GameController gameController;
     
 
