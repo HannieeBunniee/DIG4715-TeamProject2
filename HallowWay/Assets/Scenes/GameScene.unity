@@ -24833,7 +24833,7 @@ MonoBehaviour:
   points:
   - {fileID: 2121358939}
   - {fileID: 445618788}
-  delay: 1
+  delay: 0
   reverseOrder: 1
   braking: 1
 --- !u!23 &8654612665714285602
