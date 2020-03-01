@@ -21,7 +21,6 @@ ScriptsOnlyBuild:
     - PlayerController
     - PlayerMovement
     - SwordPickup
-    - UnityEngine.AI.NavMeshModifier
     - UnityEngine.AI.NavMeshSurface
     - VolumeChange
     - WeaponController
@@ -118,8 +117,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10432}
     - Class: 114
       Script: {instanceID: 10504}
-    - Class: 114
-      Script: {instanceID: 10522}
     - Class: 114
       Script: {instanceID: 10578}
     - Class: 114
@@ -874,4 +871,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: D:/Documents/Githubs/DIG4715-TeamProject2/HallowWay/Build/HallowWay.exe
+  playerPath: C:/Users/joshu/Desktop/Build/HallowWay.exe
