@@ -33,8 +33,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -419,7 +421,7 @@ ScriptsOnlyBuild:
     className: MouseLook
   - hash:
       serializedVersion: 2
-      Hash: bed3b1c3c4811acf404e3ff60a6d6bea
+      Hash: 98031d45d185273b364067424ee4677e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -665,7 +667,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 68855b3e7c3d780c3311493ac9651dbf
+      Hash: cb19310829427ca4daa60601e59e9e11
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -871,4 +873,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/joshu/Desktop/Build/HallowWay.exe
+  playerPath: D:/Documents/Githubs/DIG4715-TeamProject2/HallowWay/Build/HallowWay.exe

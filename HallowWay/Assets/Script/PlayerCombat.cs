@@ -15,6 +15,7 @@ public class PlayerCombat : MonoBehaviour
     float nextAttackTime = 0f;
     public bool swordPickedUp;
 
+
     public GameObject ghost;
     //public GameObject scriptEnable;
 

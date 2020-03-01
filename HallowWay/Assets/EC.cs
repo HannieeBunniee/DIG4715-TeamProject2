@@ -4,7 +4,8 @@ using UnityEngine;
 using UnityEngine.AI;
 
 public class EC : MonoBehaviour {
-    
+    public static bool playerDead;
+
     //creates spot range variable for you to muck around with in the inspector
     public float ChaseRange;
     //public float StopRange;
@@ -23,6 +24,7 @@ public class EC : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
+        playerDead = false;
         //scriptEnable.SetActive(true);
         scriptEnable.GetComponent<WeaponController>().enabled = false;
 
@@ -42,7 +44,7 @@ public class EC : MonoBehaviour {
         float distance = Vector3.Distance(target.position, transform.position);
 
         //check if the distance is within chaserange, and outside of stoprange // && (distance >= StopRange)
-        if ((distance <= ChaseRange))
+        if ((distance <= ChaseRange) && (playerDead == false))
         {
             //scriptEnable.SetActive(true);
             scriptEnable.GetComponent<WeaponController>().enabled = true;

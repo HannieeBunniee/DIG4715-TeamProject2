@@ -11,13 +11,17 @@ public class PlayerController : MonoBehaviour
 
     public GameObject loseScreen;
     //public GameObject bossDisable;
+    public GameObject doorKeyDisable;
     public GameController gameController;
-    
+    public GameObject scriptDisable;
+
+    //private EC playerDeadCheck;
 
     //Start
     private void Start()
     {
         //gameController = GetComponent<GameController>();
+        
         currentHealth = maxHealth;
         healthBar.SetPlayerHealth(maxHealth);
 
@@ -28,10 +32,13 @@ public class PlayerController : MonoBehaviour
     {
         if(currentHealth == 0)
         {
+
+            scriptDisable.GetComponent<WeaponController>().enabled = false;
             //Time.timeScale = 0f; //freeze the game //THIS FREEZE THE GAME BUT WONT UNFREEZE IT WHEN PRESSED RESTART
             Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
             gameController.LoseAudio();
-            //gameController.regAudio = false;
+            //bossDisable.SetActive(false);
+            doorKeyDisable.SetActive(false);
             
             loseScreen.SetActive(true);
 
