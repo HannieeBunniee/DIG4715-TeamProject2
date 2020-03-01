@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     //Audio
     public AudioSource musicSource;
 	public AudioClip backgroundAudio;
-    public AudioClip enemyShooting;
     public AudioClip winAudio;
     public AudioClip loseAudio;
 

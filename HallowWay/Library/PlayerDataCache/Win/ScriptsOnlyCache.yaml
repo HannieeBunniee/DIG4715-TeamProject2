@@ -21,6 +21,7 @@ ScriptsOnlyBuild:
     - PlayerController
     - PlayerMovement
     - SwordPickup
+    - UnityEngine.AI.NavMeshModifier
     - UnityEngine.AI.NavMeshSurface
     - VolumeChange
     - WeaponController
@@ -33,10 +34,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -119,6 +118,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10432}
     - Class: 114
       Script: {instanceID: 10504}
+    - Class: 114
+      Script: {instanceID: 10522}
     - Class: 114
       Script: {instanceID: 10578}
     - Class: 114
@@ -421,7 +422,7 @@ ScriptsOnlyBuild:
     className: MouseLook
   - hash:
       serializedVersion: 2
-      Hash: 98031d45d185273b364067424ee4677e
+      Hash: bed3b1c3c4811acf404e3ff60a6d6bea
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -667,7 +668,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: cb19310829427ca4daa60601e59e9e11
+      Hash: 68855b3e7c3d780c3311493ac9651dbf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
