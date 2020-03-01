@@ -18,6 +18,7 @@ public class PlayerCombat : MonoBehaviour
     public GameObject ghost;
     //public GameObject scriptEnable;
 
+
     private void Start()
     {
         swordPickedUp = false;
