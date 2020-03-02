@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
     public HealthBar healthBar;
 
     public GameObject loseScreen;
-    //public GameObject bossDisable;
+    public GameObject catDisable;
+    public GameObject keyDisable;
     public GameController gameController;
     
 
@@ -32,8 +33,10 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.None; //unlock cursorLock so they can click buttons
             gameController.LoseAudio();
             //gameController.regAudio = false;
-            
+            catDisable.SetActive(false);
+            keyDisable.SetActive(false);
             loseScreen.SetActive(true);
+
 
             
 
