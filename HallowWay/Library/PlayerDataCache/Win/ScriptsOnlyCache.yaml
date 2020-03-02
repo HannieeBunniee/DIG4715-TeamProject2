@@ -420,7 +420,7 @@ ScriptsOnlyBuild:
     className: MouseLook
   - hash:
       serializedVersion: 2
-      Hash: bed3b1c3c4811acf404e3ff60a6d6bea
+      Hash: cdd24d1fae86fce6dcbe1c2ddd8980f7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -878,4 +878,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/joshu/Desktop/Build/HallowWay.exe
+  playerPath: D:/Documents/Githubs/DIG4715-TeamProject2/HallowWay/Build/HallowWay.exe
