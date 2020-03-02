@@ -878,4 +878,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenuScene.unity
   - Assets/Scenes/GameScene.unity
-  playerPath: C:/Users/Kaylie/Desktop/DIG4715-TeamProject2/HallowWay/Build/HallowWay.exe
+  playerPath: C:/Users/joshu/Desktop/Build/HallowWay.exe
